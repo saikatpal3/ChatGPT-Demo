@@ -46,10 +46,10 @@ public class ChatGPTAPIExample {
             con.setRequestProperty("Content-Type", "application/json");
             con.setRequestProperty("Accept", "application/json");
 //Make sure you put the right Organization key saved earlier.
-            con.setRequestProperty("OpenAI-Organization", "org-zetHppJ5CJbN6s5SRRTRg5rs"); // DO NOT SHARE - DO NOT HARDCODE
+            con.setRequestProperty("OpenAI-Organization", "org-xxxxxx"); // DO NOT SHARE - DO NOT HARDCODE
             con.setDoOutput(true);
 //Make sure you put the right API Key saved earlier.
-            con.setRequestProperty("Authorization", "Bearer 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"); // DO NOT SHARE - DO NOT HARDCODE
+            con.setRequestProperty("Authorization", "Bearer sk-xxxxxx"); // DO NOT SHARE - DO NOT HARDCODE
 //Make sure to relace the path of the json file created earlier.
             String jsonInputString = FileHelper.readLinesAsString(new File("src/com/company/Request.json"));
             try (OutputStream os = con.getOutputStream()) {
